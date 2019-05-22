@@ -11,8 +11,23 @@ function calculateQuadraticEquation(){
 }
 
 function getResult(a,b,c){
-    // код для задачи №1 писать здесь
-    //return x;
+    "use strict";
+    a = 2;
+  b = 4;
+  c = 3;
+  let D, x1, x2;
+  D = b**2 - 4 * a * c;
+  if (D > 0) {
+    x = (-b - Math.sqrt(D))/(2 * a) && x = (-b + Math.sqrt(D))/(2 * a);
+    console.log("х имеет 2 значения: " + x1 + ", " + x2); 
+  } else if (D < 0) {
+    console.log("x не имеет значений")
+  } else if (D = 0) {
+    x = -b/2 * a;
+    console.log("уравнение имеет 1 значение")
+  }
+};
+    return x;
 }
 
 function calculateDrinkTask(){
